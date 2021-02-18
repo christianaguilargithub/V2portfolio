@@ -1,0 +1,62 @@
+
+*{transition:all 0.3s ease-in-out;}
+
+.navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+
+}
+
+
+ul li{
+  display: inline-block;
+  padding: 40px 10px 0px 0px;
+  font-size: 20px;
+  font-family:poppins;
+}
+
+ul li:hover{
+  color:orange;
+}
+
+.toplogo {
+    margin: 40px 0px 0px 40px;
+    height : 10%;
+    width : 20%;
+}
+
+.front-description{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    padding-top: 200px;}
+
+.front-note{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Ipad */
+@media (max-width: 768px){
+    .toplogo img {
+        height : 10%;
+        width : 40%;
+    }
+}
+/* Iphone 6/7/8 plus */
+@media(max-width: 736px){
+    .toplogo img {
+        height : 10%;
+        width : 80%;
+    }
+}
+/* Moto G4, Galaxy S5, Iphone/SE, */
+@media (max-width: 360px){
+    .toplogo img {
+        height : 10%;
+        width : 80%;
+    }
+}
+
