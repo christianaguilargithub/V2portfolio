@@ -1,158 +1,219 @@
 *{transition:all 0.3s ease-in-out;}
+
 .navbarContainer{
     display: flex;
+    position: fixed;
     justify-content: space-between;
-    padding-right: 40px;
 }
 ul li{
   display: inline-block;
-  padding: 50px 10px 0px 0px;
-  font-size: 20px;
+  padding: 3vw 0vw 0vw 0vw;
+  font-size: 1.4rem;
   font-weight: 500;
   color: rgb(37, 37, 35);
   font-family:poppins;
 }
+
 .toplogo {
-    margin: 40px 0px 0px 40px;
-    height : 10%;
-    width : 25%;
-}   
+  margin: 4vh 42vw 0vh 4vh;
+  height : 100px;
+  width : 400px
+}
 /* Hover underline */
 .navLink {
-    color: #0F141E;
-    text-decoration: none;
-    letter-spacing: 0.15em;
-    display: inline-block;
-    padding: 5px 10px;
-    margin:5px;
-    position: relative;
-  }
-  .navLink:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 3px;
-    left: 50%;
-    position: absolute;
-    color:#848889;
-    background: #848889;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  .navLink:hover{
-      color: #848889;
-  }
-  .navLink:hover:after {
-    width: 100%;
-    font-weight: 100;
-    left: 0;
-    color:#848889;
-  }
+  color: #0F141E;
+  text-decoration: none;
+  letter-spacing: 0.10em;
+  display: inline-block;
+  padding: 1vw 1vw;
+  position: relative;
+}
+.navLink:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  color:#848889;
+  background: #848889;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navLink:hover{
+    color: #848889;
+}
+.navLink:hover:after {
+  width: 100%;
+  font-weight: 100;
+  left: 0;
+  color:#848889;
+}
 /* ------Front Text------- */
-  .front-description{
-    color: #0F141E;
-    font-family: "poppins";
-    font-weight: bolder;
-    display: flex;
-    justify-content: center;
-    font-size: 62px;
-    padding-top: 150px;
+.front-description{
+  color: #0F141E;
+  font-family: "poppins";
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 40vh;
+  font-size: 4.5em;
+  text-align: center;
 }
-  .front-note{
-    display: flex;
-    justify-content: center;
-    color:#848889;
-    font-size: 25px;
-    font-weight: 500;
-    padding-bottom: 20px;
+.front-note{
+  display: flex;
+  justify-content: center;
+  color:#848889;
+  font-size: 4vh;
+  font-weight: 500;
+  padding-bottom: 20px;
 }
-  .viewProject{
-    display: flex;
-    justify-content: center;
-    font-size: 22px;
+.viewProject{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 2rem;
+  padding-top: 02rem;
 }
-  .view {
-    color: #0F141E;
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 26px;
-    padding-right: 12px;
-    padding-left: 12px;
-    margin-left: 5px;
-    margin-right: 5px;
-    letter-spacing: 0.02em;
-    display: inline-block;
-    position: relative;
-  }
-  .view:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 3px;
-    left: 50%;
-    position: absolute;
-    color:#848889;
-    background: #848889;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  .view:hover{
-      color: #848889;
-  }
-  .view:hover:after {
-    width: 100%;
-    font-weight: 100;
-    left: 0;
-    color:#848889;
-  }
+.view {
+  color: #0F141E;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 26px;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-left: 5px;
+  margin-right: 5px;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  position: relative;
+}
+.view:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  color:#848889;
+  background: #848889;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.view:hover{
+    color: #848889;
+}
+.view:hover:after {
+  width: 100%;
+  font-weight: 100;
+  left: 0;
+  color:#848889;
+}
+
+
 /* ------End Front Text ------------ */
 /* Ipad */
 @media (max-width: 768px){
-    .toplogo{
-        margin: 40px 0px 0px 40px;
-        height : 10%;
-        width : 40%;
-    }
+  .toplogo {
+    margin: 4vh 20vw 0vh 4vh;
+    height : 80px;
+    width : 320px
+  }
+ul li{
+  display: inline-block;
+  padding: 6vw 0vw 0vw 0vw;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgb(37, 37, 35);
+  font-family:poppins;
 }
+.front-description{
+  padding-top: 35vh;
+  font-size: 4em;
+}
+.front-note{
+  font-size: 4vh;
+  font-weight: 500;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.view {
+  padding: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  letter-spacing: 0.02em;
+  border: solid;
+  border-radius: 30px;
+  background-color: #F3F4F6;  
+}
+
+}
+.viewProject{
+  display: flex;
+  padding: 30px;
+  padding-top:30px;
+  /* font-size: 40rem; */
+}
+
 /* Iphone 6/7/8 plus */
 @media(max-width: 736px){
-    .navbarContainer{
-        display: flex;
-        padding: 0px;
-    }
-    .toplogo{
-        margin: 17px 0px 0px 10px;
-        height : 10%;
-        width : 80%;
-    }
-    ul li{
-        display: inline-block;
-        padding: 0px 0px 0px 0px;
-        font-size: 5px;
-        font-weight: 0;
-        color: rgb(37, 37, 35);
-        font-family:poppins;
-      }
-    .front-description{
-        color: #0F141E;
-        font-family: "poppins";
-        font-weight: bolder;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        font-size: 50px;
-        padding-top: 30px;
-        margin: 5px 20px;
-    }
+  .menu-toggle
+	{
+		display: block;
+		width: 40px;
+		height: 40px;
+		margin: 10px;
+		float: right;
+		cursor: pointer;
+		text-align: center;
+		font-size: 30px;
+		color: #1F2937;
+    padding-top: 40px;
+    padding-left: 30px;
+	}
+
+	.menu-toggle:before{
+		content: '\f00d';
+		font-family: fontAwesome;
+		line-height: 40px;
+	}
+
+	.menu-toggle.active:before{
+		content: '\f0c9';
+	}
+
+	nav{
+		display: none;
+    margin-right: 500px;
+	}
+	nav.active{
+		display: block;
+    margin-right: 500px;
+	}
+	nav.active ul{
+		display: block;
+    
+ 
+	}
+
+	nav.active ul li{
+	
+    height: 100%;
+	  width: 100%;
+	}
 }
+
 /* Moto G4, Galaxy S5, Iphone/SE, */
 @media (max-width: 360px){
-    .toplogo{
-        margin: 17px 0px 0px 10px;
-        height : 10%;
-        width : 80%;
-    }
+
 }
+
+@media (min-width: 1280px) { 
+  
+ }
+
+
 
