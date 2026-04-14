@@ -1,65 +1,379 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1">
-      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
-      crossorigin="anonymous">
-    <link
-      rel="stylesheet"
-      href="css/about.css">
-    <title>Chris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/about.css">
+    <title>About — Christian Joseph Aguilar</title>
   </head>
+  <body>
     <div class="navbarContainer">
-        <img class="toplogo top"
-            src="./css/images/logo_label.png"/>
+      <a href="./index.html" class="logo-link">
+        <img class="toplogo" src="./css/images/logo_label.png" alt="CJ Aguilar Logo"/>
+      </a>
       <div class="navMenu">
         <nav>
           <ul>
-            <li><a class="navLink"href="./index.html">Home</a></li>
-            <li><a class="navLink"href="">Skills</a></li>
-            <li><a class="navLink"href="#">Contact</a></li>
+            <li><a class="navLink" href="./index.html">Home</a></li>
+            <li><a class="navLink" href="#skills">Skills</a></li>
+            <li><a class="navLink" href="#experience">Experience</a></li>
+            <li><a class="navLink" href="#projects">Projects</a></li>
+            <li><a class="navLink" href="#education">Education</a></li>
+            <li><a class="navLink" href="./index.html#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
-    <body>
-        <div class="about-content">
-            <p class="front-description">I'm Christian Joseph B. Aguilar, a computer
-                engineer focused on web development
-                I specialize in responsive websites</p>
-                <p class="front-description1">Over the past 4 years on working as an Enhanced Basic Education Information
-                  System Coordinator I became facinated by how the system works
-                  I started learning about web development for fun in the
-                  last 1 year and a half. Now I decided to make it a career</p>
-                  <p class="front-description2">In my spare time I enjoy spending time with family, friends, playing video games
-                    and listening to music.
-                  </p>
-                <img class="mypic" src="./css/images/portfolio.png" alt="">
-        </div>
-        <div class="carousel-container">
-          <div id="slider">
-              <figure>
-                <img src="./css/images/a.jpg" alt="">
-                <img src="./css/images/b.jpg" alt="">
-                <img src="./css/images/c.jpg" alt="">
-                <img src="./css/images/a.jpg" alt="">
-                <img src="./css/images/b.jpg" alt="">
-              </figure>
+
+    <main class="resume-wrapper">
+
+      <!-- Profile Header -->
+      <section class="profile-header">
+        <div class="profile-text">
+          <h1>Christian Joseph B. Aguilar</h1>
+          <h2>Full Stack Web Developer</h2>
+          <div class="profile-contacts">
+            <a href="tel:09053833593"><i class="fa fa-phone"></i> 09053833593</a>
+            <a href="mailto:aguilar.chris9123@gmail.com"><i class="fa fa-envelope"></i> aguilar.chris9123@gmail.com</a>
+            <a href="https://www.linkedin.com/in/christian-joseph-aguilar-916019b2/" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
           </div>
         </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-      crossorigin="anonymous">
-    </script>
+        <img class="profile-photo" src="./css/images/portfolio.png" alt="Christian Joseph Aguilar">
+      </section>
+
+      <!-- Summary -->
+      <section class="resume-section">
+        <h3 class="section-title">Profile Summary</h3>
+        <p class="summary-text">
+          Full Stack Web Developer with 3+ years of experience building scalable web applications and GIS-based systems
+          using Laravel, JavaScript frameworks (Vue.js, React), and ArcGIS. Skilled in both frontend and backend development,
+          with a strong focus on interactive UI, spatial data visualization, and system integration.
+        </p>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="resume-section">
+        <h3 class="section-title">Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <span class="skill-label">Frontend</span>
+            <div class="skill-tags">
+              <span>JavaScript</span><span>Vue.js</span><span>React</span>
+              <span>Livewire</span><span>HTML</span><span>CSS</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <span class="skill-label">Backend</span>
+            <div class="skill-tags">
+              <span>PHP (Laravel)</span><span>MySQL</span><span>PostgreSQL</span>
+              <span>API Development</span><span>FastAPI</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <span class="skill-label">GIS &amp; Data</span>
+            <div class="skill-tags">
+              <span>ArcGIS Maps SDK</span><span>Geospatial Analysis</span>
+              <span>Spatial Data Visualization</span><span>Location-Based Integration</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <span class="skill-label">Tools &amp; Others</span>
+            <div class="skill-tags">
+              <span>Git</span><span>MVC</span><span>Python</span>
+              <span>Web Scraping</span><span>Ionic</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="resume-section">
+        <h3 class="section-title">Work Experience</h3>
+
+        <div class="job-entry">
+          <div class="job-header">
+            <div>
+              <h4 class="job-title">Full Stack Web Developer / Project Technical Specialist III</h4>
+              <p class="job-company">Philippine Institute of Volcanology and Seismology (PHIVOLCS)</p>
+              <p class="job-location"><i class="fa fa-map-marker"></i> PHIVOLCS Building, C.P. Garcia Ave., Diliman, Quezon City</p>
+            </div>
+            <span class="job-date">Aug 2025 – Mar 2026</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Designed and developed scalable full-stack web applications, implementing both frontend and backend components.</li>
+            <li>Supported GIS and IT innovation initiatives through development and maintenance of system features aligned with project objectives.</li>
+            <li>Facilitated system testing activities including Beta testing, User Acceptance Testing (UAT), and deployment support.</li>
+            <li>Ensured system stability and performance through continuous improvements and issue resolution.</li>
+          </ul>
+        </div>
+
+        <div class="job-entry">
+          <div class="job-header">
+            <div>
+              <h4 class="job-title">World Bank Consultant — Full Stack Web Developer</h4>
+              <p class="job-company">Philippine Institute of Volcanology and Seismology (PHIVOLCS)</p>
+              <p class="job-location"><i class="fa fa-map-marker"></i> PHIVOLCS Building, C.P. Garcia Ave., Diliman, Quezon City</p>
+            </div>
+            <span class="job-date">Nov 2024 – Jun 2025</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Developed and implemented system features based on World Bank and PHIVOLCS technical specifications.</li>
+            <li>Ensured application functionality, performance, and usability across frontend and backend systems.</li>
+            <li>Built and maintained web application modules following enterprise-level standards and guidelines.</li>
+            <li>Collaborated with stakeholders to support system integration, testing, and deployment processes.</li>
+            <li>Contributed to improving system reliability and user experience through continuous enhancements.</li>
+          </ul>
+        </div>
+
+        <div class="job-entry">
+          <div class="job-header">
+            <div>
+              <h4 class="job-title">Full Stack Web Developer / Project Technical Specialist III</h4>
+              <p class="job-company">Philippine Institute of Volcanology and Seismology (PHIVOLCS)</p>
+              <p class="job-location"><i class="fa fa-map-marker"></i> PHIVOLCS Building, C.P. Garcia Ave., Diliman, Quezon City</p>
+            </div>
+            <span class="job-date">Mar 2023 – Nov 2024</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Developed and maintained full-stack web applications using modern development frameworks and technologies.</li>
+            <li>Contributed to system modernization and replatforming initiatives for legacy applications.</li>
+            <li>Evaluated technical requirements and recommended appropriate solutions based on system needs.</li>
+            <li>Ensured alignment of development outputs with project requirements and technical standards.</li>
+            <li>Supported continuous improvement of system performance, usability, and maintainability.</li>
+          </ul>
+        </div>
+
+        <div class="job-entry">
+          <div class="job-header">
+            <div>
+              <h4 class="job-title">Full Stack Web Developer</h4>
+              <p class="job-company">National Educators Academy of the Philippines (NEAP) — DepEd</p>
+              <p class="job-location"><i class="fa fa-map-marker"></i> DepEd Complex, Meralco Ave., Pasig City</p>
+            </div>
+            <span class="job-date">Jul – Dec 2022</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Developed responsive web applications based on approved technical and functional requirements.</li>
+            <li>Implemented system features focused on reliability, accuracy, and performance stability.</li>
+            <li>Provided technical support and system assistance to internal users and stakeholders.</li>
+            <li>Assisted in maintaining and improving existing web-based systems.</li>
+          </ul>
+        </div>
+
+        <div class="job-entry">
+          <div class="job-header">
+            <div>
+              <h4 class="job-title">Front End Web Developer</h4>
+              <p class="job-company">Serbees.com Inc.</p>
+              <p class="job-location"><i class="fa fa-map-marker"></i> Makati City, Philippines</p>
+            </div>
+            <span class="job-date">Mar 2021 – Jul 2022</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Developed and maintained responsive web and mobile user interfaces based on UI/UX designs.</li>
+            <li>Implemented UI improvements to enhance usability and user experience across platforms.</li>
+            <li>Collaborated with backend developers and designers to ensure seamless system integration.</li>
+            <li>Optimized frontend components for cross-browser and cross-device compatibility.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="resume-section">
+        <h3 class="section-title">Projects</h3>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div>
+              <h4 class="project-title">Handa: Integrated Platform for Preparedness and Response</h4>
+              <p class="project-org">Philippine Institute of Volcanology and Seismology (PHIVOLCS)</p>
+            </div>
+            <div class="project-stack">
+              <span>Python</span><span>React</span><span>PostgreSQL</span><span>ArcGIS</span>
+              <span>TomTom API</span><span>Tailwind CSS</span><span>Apify</span><span>GitLab</span>
+            </div>
+          </div>
+          <p class="project-summary">Contributed as part of a development team in building a full-stack disaster intelligence and geospatial monitoring platform providing real-time visualization and analysis of multi-source hazard data for emergency preparedness and response.</p>
+          <ul class="job-bullets">
+            <li>Contributed to the design and implementation of automated data ingestion pipelines for continuous disaster monitoring — volcanic activity alerts via web scraping, earthquake event data via real-time API processing, rainfall data from PAGASA APIs, and public disaster updates from government and social media channels transformed into structured geospatial data.</li>
+            <li>Participated in developing an interactive GIS-based visualization system using ArcGIS with real-time spatial overlays: color-coded volcano alert levels, magnitude/depth-scaled earthquake events, and dynamic rainfall layers.</li>
+            <li>Assisted in developing RESTful APIs to process, normalize, and serve real-time geospatial disaster data to frontend applications.</li>
+            <li>Contributed to backend data pipelines for continuous ingestion, transformation, and storage of multi-source geospatial datasets.</li>
+            <li>Participated in integrating mapping and routing services (ArcGIS, TomTom API) to support spatial analysis and emergency response decision-making.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div>
+              <h4 class="project-title">PlanSmart for Human Settlement — CLUP</h4>
+              <p class="project-org">Department of Human Settlements and Urban Development (DHSUD)</p>
+            </div>
+            <div class="project-stack">
+              <span>PHP (Laravel)</span><span>PostgreSQL</span><span>Vue.js</span>
+              <span>JavaScript</span><span>HTML</span><span>CSS</span><span>AdminLTE</span><span>GitLab</span>
+            </div>
+          </div>
+          <p class="project-summary">Contributed to the development of a web-based platform supporting comprehensive land use planning (CLUP) through structured data management and visualization tools.</p>
+          <ul class="job-bullets">
+            <li>Participated in full-stack development based on defined system requirements and planning workflows.</li>
+            <li>Assisted in implementing modules for land use data encoding, management, and visualization.</li>
+            <li>Supported frontend and backend integration to ensure reliable data handling and user interaction.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div>
+              <h4 class="project-title">PlanSmart for Human Settlement — GIS Platform</h4>
+              <p class="project-org">Department of Human Settlements and Urban Development (DHSUD)</p>
+            </div>
+            <div class="project-stack">
+              <span>PHP (Laravel)</span><span>PostgreSQL</span><span>ArcGIS</span><span>REST API</span>
+              <span>Vue.js</span><span>Livewire</span><span>Bootstrap</span><span>AdminLTE</span><span>GitLab</span>
+            </div>
+          </div>
+          <p class="project-summary">Contributed to the development of a geospatial-enabled land use planning system integrating GIS capabilities and structured data workflows.</p>
+          <ul class="job-bullets">
+            <li>Participated in full-stack development of system features aligned with planning and analysis requirements.</li>
+            <li>Assisted in integrating GIS functionalities using ArcGIS for spatial data visualization and mapping.</li>
+            <li>Contributed to RESTful API integration and backend data management using MVC architecture.</li>
+            <li>Supported development of dynamic UI components for improved usability and workflow efficiency.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div>
+              <h4 class="project-title">PlanSmart for Safe Schools — Hazard Contingency Planning</h4>
+              <p class="project-org">Department of Education (DepEd)</p>
+            </div>
+            <div class="project-stack">
+              <span>PHP (Laravel)</span><span>PostgreSQL</span><span>ArcGIS</span><span>REST API</span>
+              <span>Highcharts</span><span>Bootstrap</span><span>AdminLTE</span><span>GitLab</span>
+            </div>
+          </div>
+          <p class="project-summary">Contributed to a hazard-based planning system designed to support school safety and contingency planning through geospatial and data-driven insights.</p>
+          <ul class="job-bullets">
+            <li>Participated in full-stack development of modules for hazard assessment and planning workflows.</li>
+            <li>Assisted in integrating GIS-based hazard visualization using ArcGIS.</li>
+            <li>Contributed to the implementation of interactive charts and UI components for data analysis and reporting.</li>
+            <li>Supported backend data processing and frontend integration for reliable system performance.</li>
+            <li>Facilitated Design Thinking sessions and served as a Resource Person, guiding stakeholders in identifying user needs, defining problem statements, and aligning system features with real-world planning requirements.</li>
+          </ul>
+          <div class="recognition-badge">
+            <i class="fa fa-certificate"></i>
+            <div>
+              <p class="recognition-title">Certificate of Recognition — Design Thinking Facilitator &amp; Resource Person</p>
+              <p class="recognition-body">Awarded by the Department of Education (DepEd) in partnership with DOST–PHIVOLCS and the World Bank for invaluable contribution as a Resource Person and Facilitator during the Design Thinking exercise for PlanSmart for Safe Schools.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div>
+              <h4 class="project-title">GeoAnalyticsPH V2 — Hazard Assessment Web Application</h4>
+              <p class="project-org">Philippine Institute of Volcanology and Seismology (PHIVOLCS)</p>
+            </div>
+            <div class="project-stack">
+              <span>PHP (Laravel)</span><span>PostgreSQL</span><span>ArcGIS Map Services</span>
+              <span>REST API</span><span>Highcharts</span><span>Bootstrap</span><span>AdminLTE</span><span>GitLab</span>
+            </div>
+          </div>
+          <p class="project-summary">Contributed to the development of a geospatial hazard assessment platform — a key system for visualizing and analyzing disaster-related data and a significant milestone in advancing GIS-driven application development.</p>
+          <ul class="job-bullets">
+            <li>Participated in full-stack development of hazard assessment and mapping functionalities.</li>
+            <li>Assisted in integrating ArcGIS Map Services for dynamic geospatial visualization and spatial data interaction.</li>
+            <li>Contributed to the development of interactive dashboards and data visualization components using charts and UI libraries.</li>
+            <li>Supported API integration and backend data handling for structured geospatial datasets.</li>
+            <li>Helped enhance system usability and performance through frontend-backend integration and UI optimization.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div>
+              <h4 class="project-title">Professional Development Information System</h4>
+              <p class="project-org">National Educators Academy of the Philippines (NEAP) — DepEd</p>
+            </div>
+            <div class="project-stack">
+              <span>PHP (Laravel)</span><span>MySQL</span><span>JavaScript</span>
+              <span>jQuery</span><span>Bootstrap</span><span>AdminLTE</span>
+            </div>
+          </div>
+          <ul class="job-bullets">
+            <li>Contributed to full-stack development of a user management system with authentication and data handling features.</li>
+            <li>Assisted in implementing responsive UI and ensuring cross-browser compatibility.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div>
+              <h4 class="project-title">Serbees Site — Responsive Commercial Web Application</h4>
+              <p class="project-org">Serbees.com Inc.</p>
+            </div>
+            <div class="project-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              <span>jQuery</span><span>PHP (Laravel)</span>
+            </div>
+          </div>
+          <ul class="job-bullets">
+            <li>Developed responsive front-end layouts based on UI/UX design specifications.</li>
+            <li>Ensured mobile-first design and cross-browser compatibility.</li>
+            <li>Assisted in integrating frontend components with backend services.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div>
+              <h4 class="project-title">Serbees Client App &amp; Provider App — Cross-Platform Mobile</h4>
+              <p class="project-org">Serbees.com Inc.</p>
+            </div>
+            <div class="project-stack">
+              <span>Ionic</span><span>AngularJS</span><span>JavaScript</span>
+              <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+            </div>
+          </div>
+          <ul class="job-bullets">
+            <li>Developed and enhanced cross-platform mobile UI using Ionic and AngularJS.</li>
+            <li>Improved application responsiveness and usability across Android and iOS devices.</li>
+            <li>Implemented feature updates and UI enhancements based on business requirements.</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="resume-section">
+        <h3 class="section-title">Education</h3>
+        <div class="edu-entry">
+          <div class="edu-header">
+            <div>
+              <h4 class="edu-school">Zuitt Coding Bootcamp</h4>
+              <p class="edu-degree">Full Stack Web Development</p>
+            </div>
+            <span class="job-date">Jul – Oct 2019</span>
+          </div>
+        </div>
+        <div class="edu-entry">
+          <div class="edu-header">
+            <div>
+              <h4 class="edu-school">University of the East — Caloocan</h4>
+              <p class="edu-degree">BS Computer Engineering</p>
+            </div>
+            <span class="job-date">2008 – 2015</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   </body>
 </html>
