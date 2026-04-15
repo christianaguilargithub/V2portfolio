@@ -32,7 +32,7 @@ body {
   border: none;
   cursor: pointer;
   padding: 4px;
-  z-index: 1001;
+  z-index: 1002;
 }
 .hamburger span {
   display: block;
@@ -51,20 +51,21 @@ body {
   display: none;
   flex-direction: column;
   position: fixed;
-  inset: 0;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   background: #F9FAFB;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 28px;
   list-style: none;
-  z-index: 999;
+  z-index: 1001;
   padding: 0;
 }
 .navMenu.open { display: flex; }
 .navMenu li { width: auto; }
 .navLink {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #9CA3AF;
   text-decoration: none;
