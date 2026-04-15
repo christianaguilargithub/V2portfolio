@@ -12,10 +12,10 @@
 
     <!-- NAV -->
     <nav class="navbar">
-        <a href="#home" class="nav-logo">
-          <img src="./css/images/cj_logo_label.png" alt="Christian Joseph Aguilar" />
-        </a>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
+      <a href="#home" class="nav-logo">
+        <img src="./css/images/cj_logo_label.png" alt="Christian Joseph Aguilar" />
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
@@ -26,6 +26,7 @@
         <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
     </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
 
     <!-- HERO -->
     <section class="hero" id="home">
@@ -36,7 +37,7 @@
           <em class="hero-italic">turn data into decisions.</em>
         </h1>
         <p class="hero-sub">
-          3+ years developing GIS platforms and spatial analytics tools, including hazard mapping 
+          3+ years developing GIS platforms and spatial analytics tools, including hazard mapping
           and geospatial data visualization, for Philippine government agencies and World Bank-supported projects.
         </p>
         <div class="hero-actions">
@@ -218,8 +219,8 @@
             and contributing to production systems for government agencies and World Bank-supported projects.
           </p>
           <p>
-            My work sits at the intersection of web development and geospatial technology—developing platforms and tools 
-            used for hazard visualization, spatial analysis, and decision support in disaster risk management
+            My work sits at the intersection of web development and geospatial technology — developing platforms
+            used for hazard visualization, spatial analysis, and decision support in disaster risk management.
           </p>
           <p>
             BS Computer Engineering, University of the East.
@@ -284,7 +285,6 @@
           <div class="timeline-dot"></div>
           <div class="timeline-right">
             <h4 class="timeline-role">Full Stack Web Developer</h4>
-            <p class="timeline-title"></p>
             <p class="timeline-org">National Educators Academy of the Philippines <span class="mono">NEAP — DepEd</span></p>
             <p class="timeline-desc">Developed responsive web applications, implemented system features, and provided technical support to internal users and stakeholders.</p>
           </div>
@@ -297,7 +297,6 @@
           <div class="timeline-dot"></div>
           <div class="timeline-right">
             <h4 class="timeline-role">Front End Web Developer</h4>
-            <p class="timeline-title"></p>
             <p class="timeline-org">Serbees.com Inc. <span class="mono">Makati City</span></p>
             <p class="timeline-desc">Built responsive web and mobile UIs, optimized frontend components for cross-browser compatibility, and collaborated with backend developers on system integration.</p>
           </div>
@@ -336,17 +335,27 @@
     <script>
       const hamburger = document.getElementById('hamburger');
       const navLinks   = document.getElementById('navLinks');
+      const navOverlay = document.getElementById('navOverlay');
+
+      function openNav() {
+        hamburger.classList.add('open');
+        navLinks.classList.add('open');
+        navOverlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeNav() {
+        hamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+        navOverlay.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
       hamburger.addEventListener('click', function () {
-        hamburger.classList.toggle('open');
-        navLinks.classList.toggle('open');
-        document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+        navLinks.classList.contains('open') ? closeNav() : openNav();
       });
+      navOverlay.addEventListener('click', closeNav);
       navLinks.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', function () {
-          hamburger.classList.remove('open');
-          navLinks.classList.remove('open');
-          document.body.style.overflow = '';
-        });
+        link.addEventListener('click', closeNav);
       });
     </script>
   </body>
