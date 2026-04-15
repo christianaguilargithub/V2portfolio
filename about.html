@@ -10,23 +10,22 @@
     <title>About — Christian Joseph Aguilar</title>
   </head>
   <body>
-    <div class="navbarContainer">
+    <nav class="navbarContainer">
       <a href="./index.html" class="logo-link">
         <img class="toplogo" src="./css/images/logo_label.png" alt="CJ Aguilar Logo"/>
       </a>
-      <div class="navMenu">
-        <nav>
-          <ul>
-            <li><a class="navLink" href="./index.html">Home</a></li>
-            <li><a class="navLink" href="#skills">Skills</a></li>
-            <li><a class="navLink" href="#experience">Experience</a></li>
-            <li><a class="navLink" href="#projects">Projects</a></li>
-            <li><a class="navLink" href="#education">Education</a></li>
-            <li><a class="navLink" href="./index.html#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navMenu" id="navLinks">
+        <li><a class="navLink" href="./index.html">Home</a></li>
+        <li><a class="navLink" href="#skills">Skills</a></li>
+        <li><a class="navLink" href="#experience">Experience</a></li>
+        <li><a class="navLink" href="#projects">Projects</a></li>
+        <li><a class="navLink" href="#education">Education</a></li>
+        <li><a class="navLink" href="./index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
 
     <main class="resume-wrapper">
 
@@ -374,5 +373,6 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
