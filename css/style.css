@@ -54,6 +54,7 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
+  z-index: 1003;
   flex-shrink: 0;
 }
 .nav-logo img {
@@ -73,13 +74,13 @@ body {
   border: none;
   cursor: pointer;
   padding: 4px;
-  z-index: 1001;
+  z-index: 1003;
 }
 .hamburger span {
   display: block;
   width: 22px;
   height: 1.5px;
-  background: var(--text);
+  background: var(--text-muted);
   border-radius: 2px;
   transition: all 0.3s;
 }
@@ -98,9 +99,8 @@ body {
   align-items: center;
   gap: 28px;
   list-style: none;
-  z-index: 999;
 }
-.nav-links.open { display: flex; }
+.nav-links.open { display: flex; height: 100vh; background-color: whitesmoke; z-index: 1000;.hamburger span}
 .nav-links a {
   font-family: var(--font-display);
   font-size: 2rem;
@@ -151,6 +151,24 @@ body {
   color: var(--text);
   margin-bottom: 24px;
 }
+
+.hero-heading2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 8vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 24px;
+
+
+  background: linear-gradient(var(--accent) 0%, #A78BFA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
 .hero-italic {
   font-style: italic;
   background: linear-gradient(135deg, var(--accent) 0%, #A78BFA 100%);
@@ -256,8 +274,10 @@ body {
   color: var(--text);
   margin-top: 12px;
 }
-.section-heading em {
-  font-style: italic;
+.section-heading2{
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
   color: var(--text-muted);
 }
 
@@ -366,7 +386,12 @@ body {
   letter-spacing: -0.01em;
   color: var(--text);
 }
-.project-name em { font-style: italic; color: var(--text-muted); }
+.project-name2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  color: var(--text-muted); 
+}
 
 .project-client {
   font-family: 'Courier New', monospace;
@@ -643,6 +668,7 @@ body {
   .iframe-wrap { height: 270px; }
   .contact-cards { flex-direction: row; flex-wrap: wrap; }
   .about-image img { width: 160px; height: 160px; }
+  .nav-links { }
 }
 
 /* ================================================================
