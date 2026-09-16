@@ -37,7 +37,7 @@ Single-page layout with five sections navigable via the fixed navbar:
 
 | # | Section | Description |
 |---|---------|-------------|
-| 01 | Work | Three featured projects with live browser mockups and iframe previews |
+| 01 | Work | Four featured projects with live browser mockups and previews |
 | 02 | Skills & Tools | Four skill cards — Frontend, Backend, GIS & Spatial, Tools |
 | 03 | About | Bio, photo, and link to full resume |
 | 04 | Career | Chronological employment timeline (2021–2026) |
@@ -80,6 +80,14 @@ Geospatial hazard assessment platform with dynamic ArcGIS map services, interact
 **URL:** [handa.georisk.gov.ph](https://handa.georisk.gov.ph)
 Real-time disaster intelligence system with automated ingestion of volcanic alerts, earthquake data, and rainfall from PAGASA. Features ArcGIS spatial overlays and TomTom routing for emergency response decision-making.
 **Stack:** Python, React, ArcGIS, PostgreSQL, TomTom API, Tailwind CSS, Apify
+
+### 04 — Pokédex AI: A Retrieval-Grounded LLM Chatbot
+**Type:** Generative AI application / API-augmented domain-specific chatbot
+**URL:** [christianaguilargithub.github.io/pokedexChat](https://christianaguilargithub.github.io/pokedexChat/)
+Combines Groq-hosted LLM inference with structured PokéAPI retrieval and prompt grounding to produce natural-language Pokémon answers. FastAPI handles the `/chat` endpoint, with a responsive Pokédex interface, Render cold-start retries, loading states, sprite fallbacks, and responsive message formatting.
+**Stack:** Groq LLM, FastAPI, PokéAPI, HTML, CSS, JavaScript
+
+This is retrieval-grounded, but not traditional vector-based RAG: it uses structured API retrieval and prompt injection rather than document embeddings, a vector database, and similarity search.
 
 ---
 
