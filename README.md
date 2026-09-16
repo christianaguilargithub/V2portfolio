@@ -63,31 +63,31 @@ Full CV page including profile summary, technical skills, work experience, proje
 
 ## Featured Projects
 
-### 01 — PlanSmart for Safe Schools
+### 01 — Pokédex AI: A Retrieval-Grounded LLM Chatbot
+**Type:** Generative AI application / API-augmented domain-specific chatbot
+**URL:** [christianaguilargithub.github.io/pokedexChat](https://christianaguilargithub.github.io/pokedexChat/)
+Fun personal project for exploring conversational AI. Combines Groq-hosted LLM inference with structured PokéAPI retrieval and prompt grounding to produce natural-language Pokémon answers. FastAPI handles the `/chat` endpoint, with a responsive Pokédex interface, Render cold-start retries, loading states, sprite fallbacks, and responsive message formatting.
+**Stack:** Groq LLM, FastAPI, PokéAPI, HTML, CSS, JavaScript
+
+This is retrieval-grounded, but not traditional vector-based RAG: it uses structured API retrieval and prompt injection rather than document embeddings, a vector database, and similarity search.
+
+### 02 — PlanSmart for Safe Schools
 **Client:** DepEd × DOST-PHIVOLCS × World Bank
 **URL:** [uat-safeschools.georisk.gov.ph](https://uat-safeschools.georisk.gov.ph)
 Hazard-based contingency planning platform for schools across the Philippines. Integrates ArcGIS spatial layers with structured planning workflows for multi-hazard exposure assessment.
 **Stack:** Laravel, ArcGIS, Vue.js, PostgreSQL, Highcharts, REST API
 
-### 02 — GeoAnalyticsPH V2
+### 03 — GeoAnalyticsPH V2
 **Client:** DOST-PHIVOLCS
 **URL:** [geoanalytics.georisk.gov.ph](https://geoanalytics.georisk.gov.ph)
 Geospatial hazard assessment platform with dynamic ArcGIS map services, interactive dashboards, and structured datasets for disaster risk reduction.
 **Stack:** Laravel, ArcGIS Map Services, PostgreSQL, Highcharts, REST API, Bootstrap
 
-### 03 — Handa: Integrated Platform for Disaster Preparedness and Response
+### 04 — Handa: Integrated Platform for Disaster Preparedness and Response
 **Client:** DOST-PHIVOLCS × World Bank
 **URL:** [handa.georisk.gov.ph](https://handa.georisk.gov.ph)
 Real-time disaster intelligence system with automated ingestion of volcanic alerts, earthquake data, and rainfall from PAGASA. Features ArcGIS spatial overlays and TomTom routing for emergency response decision-making.
 **Stack:** Python, React, ArcGIS, PostgreSQL, TomTom API, Tailwind CSS, Apify
-
-### 04 — Pokédex AI: A Retrieval-Grounded LLM Chatbot
-**Type:** Generative AI application / API-augmented domain-specific chatbot
-**URL:** [christianaguilargithub.github.io/pokedexChat](https://christianaguilargithub.github.io/pokedexChat/)
-Combines Groq-hosted LLM inference with structured PokéAPI retrieval and prompt grounding to produce natural-language Pokémon answers. FastAPI handles the `/chat` endpoint, with a responsive Pokédex interface, Render cold-start retries, loading states, sprite fallbacks, and responsive message formatting.
-**Stack:** Groq LLM, FastAPI, PokéAPI, HTML, CSS, JavaScript
-
-This is retrieval-grounded, but not traditional vector-based RAG: it uses structured API retrieval and prompt injection rather than document embeddings, a vector database, and similarity search.
 
 ---
 

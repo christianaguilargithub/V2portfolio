@@ -75,14 +75,9 @@ body {
   border: 1px solid var(--border);
   border-radius: 8px;
   cursor: pointer;
-<<<<<<< HEAD
   padding: 8px 10px;
   z-index: 1002;
   transition: border-color 0.2s;
-=======
-  padding: 4px;
-  z-index: 1003;
->>>>>>> 2c572053d7276314203d9d9d5a0d0a9c950c4016
 }
 .hamburger:hover { border-color: var(--accent); }
 .hamburger span {
@@ -104,7 +99,6 @@ body {
   display: none;
   position: fixed;
   inset: 0;
-<<<<<<< HEAD
   background: rgba(0,0,0,0.6);
   backdrop-filter: blur(4px);
   z-index: 1000;
@@ -153,16 +147,6 @@ body {
   border-bottom: 1px solid var(--border);
 }
 .nav-links li:first-child { border-top: 1px solid var(--border); }
-
-=======
-  background: var(--bg);
-  justify-content: center;
-  align-items: center;
-  gap: 28px;
-  list-style: none;
-}
-.nav-links.open { display: flex; height: 100vh; background-color: whitesmoke; z-index: 1000;.hamburger span}
->>>>>>> 2c572053d7276314203d9d9d5a0d0a9c950c4016
 .nav-links a {
   display: flex;
   align-items: center;
